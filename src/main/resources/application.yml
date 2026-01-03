@@ -2,8 +2,22 @@ server:
   port: ${PORT:8080}
 
 spring:
+  datasource:
+    url: jdbc:postgresql://dpg-d5c6hhlactks73c7ajk0-a/mycontest_2lxv
+    username: mycontest_dbuser
+    password: kmhwJjgbtSDbvLAzY3XhKJftVHdUjqdd
   jpa:
     hibernate:
       ddl-auto: validate
   flyway:
     enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
