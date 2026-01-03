@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title th:text="${pageTitle}">Competitions</title>
+  <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+  <main class="container">
+    <h1>Competitions</h1>
+    <p>Du bist eingeloggt.</p>
+
+    <form th:action="@{/logout}" method="post">
+      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+      <button type="submit">Logout</button>
+    </form>
+
+    <hr/>
+    <p>Nächster Schritt: Wettbewerb anlegen (Draft), Teilnehmer erfassen, Modus wählen.</p>
+  </main>
+</body>
+</html>
+
