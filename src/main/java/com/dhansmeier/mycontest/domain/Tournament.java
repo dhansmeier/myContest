@@ -1,4 +1,4 @@
-package main.java.com.dhansmeier.mycontest.domain;
+package com.dhansmeier.mycontest.domain;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.UuidGenerator;

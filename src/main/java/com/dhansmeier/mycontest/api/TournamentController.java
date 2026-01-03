@@ -1,4 +1,4 @@
-package main.java.com.dhansmeier.mycontest.api;
+package com.dhansmeier.mycontest.api;
 
 import com.dhansmeier.mycontest.domain.Tournament;
 import com.dhansmeier.mycontest.repo.TournamentRepository;
