@@ -1,12 +1,10 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:mycontest;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: jdbc:postgresql://localhost:5432/mycontest
+    username: ${USER}
+    password: ""
   flyway:
-    enabled: false
+    enabled: true
   jpa:
     hibernate:
-      ddl-auto: create-drop
-    
+      ddl-auto: validate
