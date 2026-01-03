@@ -11,6 +11,8 @@ spring:
       ddl-auto: validate
   flyway:
     enabled: true
+  application:
+    name: mycontest
 
 management:
   endpoints:
