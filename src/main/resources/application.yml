@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-d5c6hhlactks73c7ajk0-a/mycontest_2lxv
-    username: mycontest_dbuser
-    password: kmhwJjgbtSDbvLAzY3XhKJftVHdUjqdd
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: validate
